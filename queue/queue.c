@@ -35,7 +35,7 @@ struct queue* new_queue(){
 	 * Returns a pointer to a new empty queue
 	 * */
 	struct queue *Queue = malloc(sizeof(struct queue));
-	Queue->data = 0;
+	Queue->data = NULL;
 	return Queue;
 };
 void print_queue(struct queue *Queue,void (*print)(void*)){
