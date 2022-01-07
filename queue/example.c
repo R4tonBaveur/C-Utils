@@ -16,7 +16,8 @@ int main(){
 		enqueue(Q,v);
 	}
 	print_queue(Q,print_int);
-	dequeue(Q);
+	struct queue* res = dequeue(Q);
 	print_queue(Q,print_int);
+	print_queue(res,print_int);
 	return 0;
 }

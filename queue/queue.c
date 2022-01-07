@@ -22,7 +22,8 @@ struct queue* dequeue(struct queue* Queue){
 	 * dequeues the first value of the Queue and returns the dequeued element
 	 * Param: Queue->Queue we want to dequeue fro;
 	 * */
-	struct queue* res = Queue->next;
+	struct queue* res = new_queue();
+	res->next = Queue->next;
 	if(Queue->next != NULL && Queue->next->next != NULL){
 		Queue->next = Queue->next->next;
 	}
